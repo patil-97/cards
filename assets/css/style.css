@@ -1,0 +1,62 @@
+body{
+	background-color: #34568B;
+}
+
+.logo{
+	width:200px;
+	display:inline-block;
+}
+
+.movieCards{
+	height:600px;
+	overflow:hidden;
+	position:relative;
+	
+}
+
+.movieCards img{
+	height:100%;
+	width:100%;
+	object-fit:cover;
+	
+}
+
+.rating{
+	text-align:center;
+}
+
+.b-radius{
+	border-radius:20px;
+}
+
+.movieTitle{
+	position:absolute;
+	bottom:0;
+	left:0;
+	color:#fff;
+	
+}
+
+.movieOverview{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:70%;
+	backdrop-filter:blur(20px);
+	color:#fff;
+	transform:translateY(120%);
+	transition: all 0.4s linear;
+	opacity:0;
+	border-radius:20px;
+}
+
+.movieCards:hover{
+	box-shadow:10px 10px 10px -5px #000;
+}
+
+
+.movieCards:hover .movieOverview{
+	transform:translate(0);
+	opacity:1;
+}
